@@ -1,5 +1,5 @@
 {
     "scripts":{
-        "postdeploy":"rake db:setup && bin/bootstrap"
+        "postdeploy":"rake db:migrate RAILS_ENV=production && bin/bootstrap"
     }
 }
