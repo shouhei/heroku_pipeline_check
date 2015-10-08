@@ -1,2 +1,5 @@
 {
+    "scripts":{
+        "postdeploy":"rake db:setup && bin/bootstrap"
+    }
 }
