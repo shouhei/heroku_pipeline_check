@@ -49,7 +49,6 @@ test:
 #
 production:
   <<: *default
-  adapter: pg
   database: heroku_pipleine_check_production
   username: heroku_pipleine_check
   password: <%= ENV['HEROKU_PIPLEINE_CHECK_DATABASE_PASSWORD'] %>
