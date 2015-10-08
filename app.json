@@ -1,3 +1,5 @@
 {
-    "name":"heroku_pipeline_check"
+  "scripts":{
+    "postdeploy":"rake db:migrate RAILS_ENV=production && rails s -p $PORT -e $RAILS_ENV "
+  }
 }
